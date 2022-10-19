@@ -8,5 +8,4 @@ Se ha hecho un esfuerzo para que descargando o haciendo una copia del repositori
 
 2. Descarga un archivo comprimido desde la página web del repositorio y corre los scripts como tu quieras. Solo, obviamente, deberás tener el software necesario instalado.
 
-Este proyecto construye sobre el trabajo de manipulación de datos que realicé en my tesis de pregrado, [Honesty By Convenience: Corruption Tolerance in Ecuador](https://daniel-ec.netlify.app/research.html), específicamente el trabajo que realicé para juntar las bases de datos de las encuestas del Barómetro de las Américas. Este [repositorio](https://github.com/dsanchezp18/hbc-prelim) y [este otro](https://github.com/dsanchezp18/hbc-v2) incluye una parte de los procesos que realicé para ese trabajo, y parte de lo que utilizo en este repositorio para mi análisis de los datos sobre protestas en el país. Para este trabajo, parto de lo que hice en ese momento para agregar los datos de la encuesta realizada en 2021. 
-
+Para más información, consulta el [perfil de GitHub del autor](https://github.com/dsanchezp18/protests-article)

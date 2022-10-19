@@ -8,4 +8,4 @@ Se ha hecho un esfuerzo para que descargando o haciendo una copia del repositori
 
 2. Descarga un archivo comprimido desde la página web del repositorio y corre los scripts como tu quieras. Solo, obviamente, deberás tener el software necesario instalado.
 
-Para más información, consulta el [perfil de GitHub del autor](https://github.com/dsanchezp18/protests-article)
+Para más información, consulta el [perfil de GitHub del autor](https://github.com/dsanchezp18/protests-article).

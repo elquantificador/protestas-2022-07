@@ -12,12 +12,17 @@ if(!require(survey)) install.packages("survey", repos = "http://cran.us.r-projec
 if(!require(tidyverse)) install.packages("tidyverse", repos = "http://cran.us.r-project.org")
 if(!require(patchwork)) install.packages("patchwork", repos = "http://cran.us.r-project.org")
 if(!require(openxlsx)) install.packages("openxlsx", repos = "http://cran.us.r-project.org")
+if(!require(haven)) install.packages("haven", repos = "http://cran.us.r-project.org")
 
 # ---- DATOS ----
 
 # Cargamos los datos de forma dinámica haciendo source al script de carga de datos
 
 source('code/protestas_download.R')
+
+# df <- read.csv('data/protests_data.csv') # Esta es la misma base de datos que está subida en nuestro drive. Un error de paquetes no me permite descargar.
+
+# load('data/full_lapop_dataset.Rdata')
 
 # Esta base de datos se construye a partir de los datos abiertos que LAPOP provee al público- si quieres observar como se ha construido la base,
 # puedes entrar al script 'protestas_data_manipulation.R' y a mi repositorio hbc-v2.
@@ -93,8 +98,7 @@ caption_grafo1<-
 
 prot_part_graf<- 
   ggplot(prot_df, aes(x = year, y = protest))+
-  geom_col(fill = quant_blue,# ---- LIBRERIAS ----
-
+  geom_col(fill = quant_blue,
            color = 'black', 
            width = 0.7)+
   geom_vline(xintercept = 0.5, linetype = 'dotted', color = quant_red, size = 1.25)+
@@ -229,6 +233,8 @@ japrov_time<-svyby(~ pres_aprov_dic,
 
 # Confidence in the president
 
+lapop_des$variables$pres_conf_dic <- as.factor(lapop_des$variables$pres_conf_dic)
+
 pconf_time<-svyby(~ pres_conf_dic, 
                   ~ year, 
                   design = lapop_des,
@@ -358,4 +364,5 @@ summ4<-
         design = lapop_des,
         svymean,
         na.rm = T)
+
 

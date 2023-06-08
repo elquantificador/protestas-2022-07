@@ -7,7 +7,7 @@ url <- paste("https://drive.google.com/uc?export=download&id=", id, sep = "")
 td <- tempdir()
 
 # creates a placeholder file
-tf <- tempfile(tmpdir = td, 
+tf <- tempfile(tmpdir = td,
                fileext = ".Rdata") # file extension
 
 # downloads the data into the placeholder file - warning mode = "wb" for windows
